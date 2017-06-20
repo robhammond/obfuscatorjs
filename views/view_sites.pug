@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1 sites
+	a(class="pull-right btn btn-success" href="/add-site") + add sites
+	table(class="table table-bordered table-striped")
+		tr
+			th Site
+			th Hits
+			th Last visited
+		each val in urls
+			tr
+				td= val.url
+				td= val.hits
+				td= val.last_visited
+			

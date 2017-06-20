@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title= title
+		script(src='/js/jquery-3.2.1.min.js')
+		script(src='/js/bootstrap.min.js')
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/font-awesome.min.css')
+	body
+		a(class='sr-only', href='#content') Skip to content
+		div(class='navbar')
+			a(class='navbar-brand', href='/') Obfuscator
+			ul(class='nav navbar-nav')
+				li
+					a(href='/') Home
+		div(class='container', id='content')
+			div(class='row')
+				block content

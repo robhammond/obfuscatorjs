@@ -1,0 +1,29 @@
+
+block content
+	h1 test
+	table(border="1")
+		tr
+			th User agent
+			td(id="user-agent")
+		tr
+			th Screen size
+			td(id="screen-size")
+	h2 links
+	ul
+		li
+			a(href="https://www.theguardian.com/") guardian
+		li
+			a(href="http://www.telegraph.co.uk/") telegraph
+		li
+			a(href="http://www.mirror.co.uk/") mirror
+		li
+			a(href="https://www.thesun.co.uk/") sun
+		li
+			a(href="https://www.thesun.co.uaak/") broken
+		li
+			a(href="") blank
+		li
+			a(href="http://localhost:3000/test") link to self
+	script.
+		document.getElementById('user-agent').innerHTML = navigator.userAgent;
+		document.getElementById('screen-size').innerHTML = screen.width + " x " + screen.height;
